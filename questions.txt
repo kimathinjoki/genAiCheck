@@ -1,0 +1,5 @@
+Explain why it is crucial for an IT maintenance team to align its structure with an organization's operational goals. Provide an example of how poor alignment can negatively impact system performance.
+Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where failing to prioritize maintenance properly led to system failure or downtime. How could it have been prevented?
+Explain the importance of version control in IT system maintenance. How does configuration management support version control in a multi-version software environment?
+Describe the role of security audits in maintaining IT system integrity. How do security patches and compliance standards contribute to preventing cyber threats?
+A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure. The IT team is unsure whether to focus on system upgrades or maintenance process improvements. What approach should the IT team take to ensure minimal disruptions to hospital operations? Suggest at least two maintenance strategies that could improve system stability.
