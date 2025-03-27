@@ -1,4 +1,4 @@
 .env
 llm_response_cache
-resources/student_submission/
+resources/student_submissions/
 resources/results/
