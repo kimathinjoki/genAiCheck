@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 AI Detection Tool - Compares student submissions with responses from different LLMs
 to detect potentially AI-generated content.
@@ -33,7 +33,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from tqdm import tqdm
 from dotenv import load_dotenv
 
-# Fix NLTK SSL certificate issue
+# NLTK SSL certificate 
 import ssl
 
 # More robust NLTK data download
@@ -66,8 +66,8 @@ except Exception as e:
         return sentences
 
     def word_tokenize_fallback(text):
-        """Simple word tokenizer as fallback."""
-        # Remove punctuation and split on whitespace
+        """Simple word tokenizer"""
+        
         text = re.sub(r'[^\w\s]', ' ', text)
         return [word for word in text.lower().split() if word]
     
@@ -94,9 +94,9 @@ from openai import OpenAI
 from anthropic import Anthropic
 import google.generativeai as genai
 
-# =====================================================================
+# 
 # Configuration and Setup
-# =====================================================================
+# 
 
 # Initialize API clients
 try:
@@ -151,9 +151,9 @@ LLM_CONFIGS = {
     }
 }
 
-# =====================================================================
+# 
 # LLM API Functions
-# =====================================================================
+# 
 def get_openai_response(prompt, model, max_tokens=1000):
     """Get a response from OpenAI API."""
     try:
@@ -253,51 +253,10 @@ def get_all_llm_responses(prompt, cache=True):
     
     return results
 
-# =====================================================================
+# 
 # Text Analysis Functions
-# =====================================================================
+# 
 
-# def compute_text_metrics(text):
-#     """Compute various text metrics for analysis."""
-#     if not text or text.startswith("Error:"):
-#         return {
-#             "avg_sentence_length": 0,
-#             "avg_word_length": 0,
-#             "sentence_count": 0,
-#             "word_count": 0,
-#             "unique_words_ratio": 0,
-#             "complexity_score": 0
-#         }
-    
-#     # Clean text and tokenize
-#     text = re.sub(r'\s+', ' ', text).strip()
-#     sentences = sent_tokenize(text)
-#     words = word_tokenize(text.lower())
-    
-#     # Filter out punctuation
-#     words = [word for word in words if word.isalnum()]
-    
-#     # Basic metrics
-#     sentence_count = len(sentences)
-#     word_count = len(words)
-#     unique_words = set(words)
-#     unique_words_ratio = len(unique_words) / word_count if word_count > 0 else 0
-    
-#     # Average lengths
-#     avg_sentence_length = word_count / sentence_count if sentence_count > 0 else 0
-#     avg_word_length = sum(len(word) for word in words) / word_count if word_count > 0 else 0
-    
-#     # Complexity score (simple heuristic)
-#     complexity_score = (avg_sentence_length * 0.5) + (avg_word_length * 1.5) + (unique_words_ratio * 5)
-    
-#     return {
-#         "avg_sentence_length": avg_sentence_length,
-#         "avg_word_length": avg_word_length,
-#         "sentence_count": sentence_count,
-#         "word_count": word_count,
-#         "unique_words_ratio": unique_words_ratio,
-#         "complexity_score": complexity_score
-#     }
 
 
 def compute_text_metrics(text):
@@ -604,9 +563,9 @@ def normalize_text(text):
     
     return text
 
-# =====================================================================
+# 
 # Document Processing Functions
-# =====================================================================
+# 
 
 def extract_questions_from_document(file_path):
     """Extract questions from a DOCX or PDF file."""
@@ -850,16 +809,16 @@ def extract_answer_for_question(full_response, question, question_idx):
             return sections[section_idx].strip()
     
     # Strategy 5: As a fallback, divide the document into equal parts
-    num_questions = 5  # Assume 5 questions by default, adjust as needed
+    num_questions = 5  # Assume 5 questions by default
     segment_size = len(full_response) // num_questions
     start_pos = question_idx * segment_size
     end_pos = (question_idx + 1) * segment_size if question_idx < num_questions - 1 else len(full_response)
     
     return full_response[start_pos:end_pos].strip()
 
-# =====================================================================
+# 
 # Analysis and Reporting Functions
-# =====================================================================
+# 
 
 def analyze_student_answer(prompt, student_answer, cache=True, display_responses=False):
     """Run the full analysis pipeline on a student answer."""
