@@ -1,3 +1,4 @@
 .env
 *./llm_response_cache
 .env
+resources/student_submission/

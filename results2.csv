@@ -1,0 +1,126 @@
+question_id,question,student_id,ai_score,most_likely_source,confidence
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,kumpatlasowmya_325336_33398562,0.08199999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,adapasriharsha_327159_33404648,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,dudiyamini_357753_33405456,0.07937499999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,dadiprakash_339616_33406871,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,voorukondaudaykiran_328650_33395844,0.09089285714285714,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,leinauerkyle_126895_33392968,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,chalamalasettyakhil_340566_33401558,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,greenbrittany_282758_33389142,0.13713530219780218,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,mohtavarun_LATE_330650_33413652,0.09869132653061223,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,gudigandlakalyankumar_372174_33397895,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,mokanpallyjayanthreddy_334140_33406193,0.11178571428571427,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,gudibandacharitha_260959_33406205,0.09857142857142857,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,gundahamsinireddy_321620_33405960,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,simhadripavan_LATE_338481_33411010,0.10358441558441558,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,narimallaelisha_271522_33369538,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,angitisanthosh_LATE_290371_33420645,0.13448660714285715,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,palavaiabhinaya_366697_33407293,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,claudegenerated_35,0.09437499999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,uppuvelankanisriharshitha_339730_33402557,0.09579220779220779,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,weirui_370023_33407554,0.11251006036217304,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,chintalapudikeerthireddy_307960_33405306,0.06999999999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,njokikimathi_376353_33400039,0.12057142857142858,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,nainalabhanukarthikeyanaidu_LATE_290795_33410450,0.08828124999999999,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,maheswarapupavanilaxmipriya_LATE_362223_33408490,0.16599999999999998,Human-written,High
+1,Explain why it is crucial for an IT maintenance team to align its structure with an organization's o...,geminigenerated_20,0.14639285714285716,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,kumpatlasowmya_325336_33398562,0.10896103896103895,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,adapasriharsha_327159_33404648,0.06999999999999999,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,dudiyamini_357753_33405456,0.06999999999999999,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,dadiprakash_339616_33406871,0.08577380952380952,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,voorukondaudaykiran_328650_33395844,0.1031377551020408,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,leinauerkyle_126895_33392968,0.07036787247087675,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,chalamalasettyakhil_340566_33401558,0.06999999999999999,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,greenbrittany_282758_33389142,0.13256881533101045,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,mohtavarun_LATE_330650_33413652,0.08892307692307691,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,gudigandlakalyankumar_372174_33397895,0.076,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,mokanpallyjayanthreddy_334140_33406193,0.09319642857142857,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,gudibandacharitha_260959_33406205,0.06999999999999999,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,gundahamsinireddy_321620_33405960,0.07952380952380951,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,simhadripavan_LATE_338481_33411010,0.08978021978021977,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,narimallaelisha_271522_33369538,0.06999999999999999,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,angitisanthosh_LATE_290371_33420645,0.10482142857142857,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,palavaiabhinaya_366697_33407293,0.10444642857142855,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,claudegenerated_35,0.08071428571428571,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,uppuvelankanisriharshitha_339730_33402557,0.08255102040816326,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,weirui_370023_33407554,0.10592633928571428,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,chintalapudikeerthireddy_307960_33405306,0.06999999999999999,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,njokikimathi_376353_33400039,0.12057142857142858,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,nainalabhanukarthikeyanaidu_LATE_290795_33410450,0.09899553571428571,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,maheswarapupavanilaxmipriya_LATE_362223_33408490,0.09142857142857143,Human-written,High
+2,Organizations must prioritize maintenance tasks based on impact analysis. Describe a situation where...,geminigenerated_20,0.10408403361344537,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,kumpatlasowmya_325336_33398562,0.08914285714285713,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,adapasriharsha_327159_33404648,0.07999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,dudiyamini_357753_33405456,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,dadiprakash_339616_33406871,0.09824999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,voorukondaudaykiran_328650_33395844,0.11875,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,leinauerkyle_126895_33392968,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,chalamalasettyakhil_340566_33401558,0.13209059233449477,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,greenbrittany_282758_33389142,0.12717857142857142,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,mohtavarun_LATE_330650_33413652,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,gudigandlakalyankumar_372174_33397895,0.08628571428571427,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,mokanpallyjayanthreddy_334140_33406193,0.10777380952380952,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,gudibandacharitha_260959_33406205,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,gundahamsinireddy_321620_33405960,0.08199999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,simhadripavan_LATE_338481_33411010,0.108625,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,narimallaelisha_271522_33369538,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,angitisanthosh_LATE_290371_33420645,0.13362755102040816,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,palavaiabhinaya_366697_33407293,0.0821875,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,claudegenerated_35,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,uppuvelankanisriharshitha_339730_33402557,0.09057142857142857,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,weirui_370023_33407554,0.08199999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,chintalapudikeerthireddy_307960_33405306,0.06999999999999999,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,njokikimathi_376353_33400039,0.08914285714285713,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,nainalabhanukarthikeyanaidu_LATE_290795_33410450,0.09152380952380952,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,maheswarapupavanilaxmipriya_LATE_362223_33408490,0.10428571428571427,Human-written,High
+3,Explain the importance of version control in IT system maintenance. How does configuration managemen...,geminigenerated_20,0.07937499999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,kumpatlasowmya_325336_33398562,0.0865688775510204,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,adapasriharsha_327159_33404648,0.09376623376623376,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,dudiyamini_357753_33405456,0.09924999999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,dadiprakash_339616_33406871,0.07892170329670328,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,voorukondaudaykiran_328650_33395844,0.08651127819548872,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,leinauerkyle_126895_33392968,0.06999999999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,chalamalasettyakhil_340566_33401558,0.10867857142857143,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,greenbrittany_282758_33389142,0.11568367346938775,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,mohtavarun_LATE_330650_33413652,0.07999999999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,gudigandlakalyankumar_372174_33397895,0.11482883275261324,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,mokanpallyjayanthreddy_334140_33406193,0.09748214285714285,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,gudibandacharitha_260959_33406205,0.13314285714285715,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,gundahamsinireddy_321620_33405960,0.06999999999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,simhadripavan_LATE_338481_33411010,0.1137953667953668,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,narimallaelisha_271522_33369538,0.14732142857142855,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,angitisanthosh_LATE_290371_33420645,0.10967410714285714,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,palavaiabhinaya_366697_33407293,0.09437499999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,claudegenerated_35,0.06999999999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,uppuvelankanisriharshitha_339730_33402557,0.10831660231660231,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,weirui_370023_33407554,0.08889935064935064,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,chintalapudikeerthireddy_307960_33405306,0.08406249999999998,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,njokikimathi_376353_33400039,0.08859340659340659,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,nainalabhanukarthikeyanaidu_LATE_290795_33410450,0.0799384236453202,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,maheswarapupavanilaxmipriya_LATE_362223_33408490,0.06999999999999999,Human-written,High
+4,Describe the role of security audits in maintaining IT system integrity. How do security patches and...,geminigenerated_20,0.08071428571428571,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,kumpatlasowmya_325336_33398562,0.12742032967032968,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,adapasriharsha_327159_33404648,0.07612244897959183,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,dudiyamini_357753_33405456,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,dadiprakash_339616_33406871,0.07511363636363635,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,voorukondaudaykiran_328650_33395844,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,leinauerkyle_126895_33392968,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,chalamalasettyakhil_340566_33401558,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,greenbrittany_282758_33389142,0.09839285714285713,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,mohtavarun_LATE_330650_33413652,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,gudigandlakalyankumar_372174_33397895,0.076,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,mokanpallyjayanthreddy_334140_33406193,0.09899553571428571,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,gudibandacharitha_260959_33406205,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,gundahamsinireddy_321620_33405960,0.08071428571428571,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,simhadripavan_LATE_338481_33411010,0.11093622448979591,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,narimallaelisha_271522_33369538,0.15785714285714286,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,angitisanthosh_LATE_290371_33420645,0.09849999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,palavaiabhinaya_366697_33407293,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,claudegenerated_35,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,uppuvelankanisriharshitha_339730_33402557,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,weirui_370023_33407554,0.07887276785714285,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,chintalapudikeerthireddy_307960_33405306,0.06999999999999999,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,njokikimathi_376353_33400039,0.094,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,nainalabhanukarthikeyanaidu_LATE_290795_33410450,0.07612244897959183,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,maheswarapupavanilaxmipriya_LATE_362223_33408490,0.11076785714285714,Human-written,High
+5,A hospital's IT department is struggling with frequent system crashes due to outdated infrastructure...,geminigenerated_20,0.09628571428571428,Human-written,High

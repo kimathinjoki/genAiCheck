@@ -112,6 +112,7 @@ LLM_CONFIGS = {
     "openai_4o": {
         "provider": "openai",
         "model": "chatgpt-4o-latest",
+        "max_tokens": 1000
         
     },
     "openai_o3": {
@@ -127,21 +128,25 @@ LLM_CONFIGS = {
     "gemini_1.5": {
         "provider": "gemini",
         "model": "gemini-1.5-pro",
+        "max_tokens": 1000
         
     },
     "gemini_2.0": {
         "provider": "gemini",
         "model": "gemini-2.0-flash",
+        "max_tokens": 1000
         
     },
     "claude_3.5": {
         "provider": "anthropic",
         "model": "claude-3-5-sonnet-20240620",
+        "max_tokens": 1000
         
     },
     "claude_3.7": {
         "provider": "anthropic",
         "model": "claude-3-7-sonnet-20250219",
+        "max_tokens": 1000
         
     }
 }
@@ -149,20 +154,27 @@ LLM_CONFIGS = {
 # =====================================================================
 # LLM API Functions
 # =====================================================================
-
-def get_openai_response(prompt, model):
+def get_openai_response(prompt, model, max_tokens=1000):
     """Get a response from OpenAI API."""
     try:
-        response = openai_client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": prompt}],
-        )
+        # Check if model is o1 or o3 which don't support max_tokens
+        if model in ["openai_o3", "openai_o1"]:
+            response = openai_client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}]
+            )
+        else:
+            response = openai_client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=max_tokens
+            )
         return response.choices[0].message.content
     except Exception as e:
         print(f"Error with OpenAI {model}: {e}")
         return f"Error: {str(e)}"
 
-def get_anthropic_response(prompt, model, max_tokens=2000):
+def get_anthropic_response(prompt, model, max_tokens=1000):
     """Get a response from Anthropic API."""
     try:
         response = anthropic_client.messages.create(
@@ -175,7 +187,7 @@ def get_anthropic_response(prompt, model, max_tokens=2000):
         print(f"Error with Anthropic {model}: {e}")
         return f"Error: {str(e)}"
 
-def get_gemini_response(prompt, model, max_tokens=2000):
+def get_gemini_response(prompt, model, max_tokens=1000):
     """Get a response from Gemini API."""
     try:
         gemini_model = genai.GenerativeModel(model_name=model)
@@ -595,6 +607,87 @@ def normalize_text(text):
 # =====================================================================
 # Document Processing Functions
 # =====================================================================
+
+def extract_questions_from_document(file_path):
+    """Extract questions from a DOCX or PDF file."""
+    questions = []
+    
+    if file_path.endswith('.docx'):
+        # Extract from DOCX
+        try:
+            doc = docx.Document(file_path)
+            in_question_section = False
+            current_question = []
+            
+            for para in doc.paragraphs:
+                text = para.text.strip()
+                
+                # Look for question section headers
+                if re.search(r'(?i)part\s+\d+:|questions|short\s+answer', text):
+                    in_question_section = True
+                    continue
+                
+                # Skip empty paragraphs
+                if not text:
+                    continue
+                
+                # Look for question indicators (numbers, bullet points)
+                if in_question_section and (re.match(r'^\d+\.|\*|\-|\•|\(\d+\)', text) or 
+                                          len(current_question) > 0):
+                    # If new question is starting and we have content from previous
+                    if re.match(r'^\d+\.|\*|\-|\•|\(\d+\)', text) and current_question:
+                        questions.append(' '.join(current_question))
+                        current_question = []
+                    
+                    # Add text to current question
+                    current_question.append(text)
+            
+            # Add the last question if any
+            if current_question:
+                questions.append(' '.join(current_question))
+                
+        except Exception as e:
+            print(f"Error extracting questions from DOCX: {e}")
+    
+    elif file_path.endswith('.pdf'):
+        # Extract from PDF
+        try:
+            text = load_text_from_pdf(file_path)
+            lines = text.split('\n')
+            in_question_section = False
+            current_question = []
+            
+            for line in lines:
+                line = line.strip()
+                
+                # Look for question section headers
+                if re.search(r'(?i)part\s+\d+:|questions|short\s+answer', line):
+                    in_question_section = True
+                    continue
+                
+                # Skip empty lines
+                if not line:
+                    continue
+                
+                # Look for question indicators
+                if in_question_section and (re.match(r'^\d+\.|\*|\-|\•|\(\d+\)', line) or 
+                                          len(current_question) > 0):
+                    # If new question is starting and we have content from previous
+                    if re.match(r'^\d+\.|\*|\-|\•|\(\d+\)', line) and current_question:
+                        questions.append(' '.join(current_question))
+                        current_question = []
+                    
+                    # Add line to current question
+                    current_question.append(line)
+            
+            # Add the last question if any
+            if current_question:
+                questions.append(' '.join(current_question))
+                
+        except Exception as e:
+            print(f"Error extracting questions from PDF: {e}")
+    
+    return questions
 
 def load_questions(file_path):
     """Load questions from a file."""
@@ -1044,8 +1137,12 @@ def parse_arguments():
     parser = argparse.ArgumentParser(
         description='Compare student answers with LLM responses to detect AI-generated content.'
     )
-    parser.add_argument('--questions', required=True, 
-                        help='Path to file containing questions')
+    # Create a mutually exclusive group for questions source
+    question_source = parser.add_mutually_exclusive_group(required=True)
+    question_source.add_argument('--questions', 
+                        help='Path to text file containing questions (one per line)')
+    question_source.add_argument('--questions_doc', 
+                        help='Path to DOCX or PDF file containing questions')
     parser.add_argument('--submissions', required=True, 
                         help='Directory containing student submission DOCX files')
     parser.add_argument('--output', default='ai_detection_results.xlsx', 
@@ -1058,17 +1155,28 @@ def parse_arguments():
 
 def main():
     """Main entry point for the script."""
-    # Parse command line arguments
+   
     args = parse_arguments()
     
-    # Verify input files
-    if not os.path.exists(args.questions):
-        print(f"Error: Questions file '{args.questions}' not found.")
+    # Load questions from appropriate source
+    questions = []
+    if args.questions:
+        # Load from text file
+        print(f"Loading questions from text file: {args.questions}")
+        questions = load_questions(args.questions)
+    elif args.questions_doc:
+        # Load from document file
+        print(f"Loading questions from document: {args.questions_doc}")
+        questions = extract_questions_from_document(args.questions_doc)
+    
+    if not questions:
+        print("Error: No questions could be loaded.")
         sys.exit(1)
     
-    if not os.path.exists(args.submissions):
-        print(f"Error: Submissions directory '{args.submissions}' not found.")
-        sys.exit(1)
+    print(f"Loaded {len(questions)} questions:")
+    for i, question in enumerate(questions, 1):
+        print(f"  {i}. {question[:100]}..." if len(question) > 100 else f"  {i}. {question}")
+    
     
     # Check for Word DOCX and PDF files in submissions directory
     docx_files = [f for f in os.listdir(args.submissions) if f.endswith('.docx')]
